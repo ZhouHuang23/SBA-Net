@@ -1,0 +1,29 @@
+TRAIN:
+  BASE_LR: 0.0001
+  EPOCHS: 80
+  BATCH_SIZE: 4
+  # AUG_STRATEGY
+  AUG_STRATEGY: ['gaussian_blur', 'random_flip', 'random_resize', 'adjust_brightness']
+  AUG_P: [0.05, 0.6, 0.3, 0.05]
+  LR_POWER: 0.9
+  OPTIMIZER: 'adam'
+  WEIGHT_DECAY: 0.0005
+  LR_SCHEDULE: 'exponential'
+  DEFAULT_AUG_P: 0.5
+
+CKPT:
+  NUM: 20
+
+MODEL:
+  NUM_CLASSES: 1
+  BACKBONE: 'vgg'
+  BACKBONE_OS: 16
+
+DATALOADER:
+  AUG_P: 0.7
+
+TEST:
+  MULTI_SCALE_TEST: 0
+  SCALE_TEST: [0.5, 0.75, 1.0, 1.25, 1.50, 1.75]
+  FLIP_TEST: 0
+
