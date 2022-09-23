@@ -1,4 +1,4 @@
-# SBA-Net (Published on ISPRS)
+# SBA-Net (ISPRS)
 
 The repository for our paper "Scribble-based Boundary-aware Network for  Weakly Supervised Salient Object Detection in Remote Sensing Images".
 
